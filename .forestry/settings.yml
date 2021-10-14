@@ -4,27 +4,27 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Content
-- type: document
-  path: content/_index.md
-  label: Home
 - type: directory
   path: content/post
-  label: Posts
+  label: PAINTING
   create: all
   match: "**/*"
   templates:
   - post
 - type: heading
+  label: Content
+- type: heading
   label: Data
 - type: directory
   path: content/authors
-  label: Authors
+  label: ABOUT THE ARTIST
   create: all
   match: "**/_index.md"
   templates:
   - author
+- type: document
+  path: content/_index.md
+  label: Home
 - type: directory
   path: config/_default
   label: Config
